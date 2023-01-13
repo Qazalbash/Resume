@@ -1,6 +1,5 @@
-This repository contains my Resume' 2022\
-This is basically a forked version of popular Resume template PlushCV.
+# Resume
 
-A PNG version of the Resume is attached below: 
+This is my resume last updated in Jan 2023. It is written in LaTeX.
 
-<img src="M Abbas Resume' 2022.png" alt="Resume PNG Image" width="800" title="Resume' 2022">
+Thanks to [Shubham Mazumder](https://github.com/sansquoi) for [template](https://github.com/sansquoi/PlushCV).
