@@ -216,9 +216,9 @@ Last Updated on \today
 \newcommand{\contactline}[4]{\begingroup
 \setbox0=\hbox{
   \includegraphics[scale=0.23,trim={0cm 1.25cm -0.4cm 0cm}]{icons/main/mail.png}{#1}\hspace{1.15cm}
-  \includegraphics[scale=0.23,trim={0cm 1.25cm -0.4cm 0cm}]{icons/main/github.png}{#2}\hspace{1.2cm}
-  \includegraphics[scale=0.23,trim={0cm 1.25cm -0.4cm 0cm}]{icons/main/phone.png}{#4}\hspace{1.2cm}
   \includegraphics[scale=0.23,trim={0cm 1.25cm -0.4cm 0cm}]{icons/main/linkedin.png}{#3}
+  \includegraphics[scale=0.23,trim={0cm 1.25cm -0.4cm 0cm}]{icons/main/phone.png}{#4}\hspace{1.2cm}
+  \includegraphics[scale=0.23,trim={0cm 1.25cm -0.4cm 0cm}]{icons/main/github.png}{#2}\hspace{1.2cm}
 }\parbox{\wd0}{\box0}\endgroup}
 
 %Inline Centered Logo
