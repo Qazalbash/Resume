@@ -10,7 +10,7 @@
 
 % Package Imports
 \usepackage[lmargin=0.9cm, vmargin=0.85cm, rmargin=0.9cm]{geometry}
-\usepackage[hidelinks]{hyperref}
+\usepackage{hyperref}
 \usepackage{enumitem}
 \usepackage{graphicx}
 \usepackage{pifont}
@@ -33,7 +33,7 @@
 %Main Title Font Definitions
 %Used for Name  and Section Headings
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\def \pathtitlefont {fonts/sourcesanspro/} 
+\def \pathtitlefont {fonts/sourcesanspro/}
 \def \firstnamefont {sourcesanspro-SemiBold}
 \def \secondnamefont {sourcesanspro-light}
 \def \titlefont {\firstnamefont}
@@ -147,7 +147,7 @@
 \setmainfont[Color=primary, Path = \pathmainfont,BoldFont=\mainfontbold,UprightFeatures={SizeFeatures={Size=\mainfontsize}},
   BoldFeatures={SizeFeatures={Size=\mainfontsize}}]{\mainfont}
 \setsansfont[Scale=MatchLowercase,Mapping=tex-text, Path = \pathmainfont,UprightFeatures={SizeFeatures={Size=\mainfontsize}}
-  ]{\mainsansfont}
+]{\mainsansfont}
 
 % Date command
 \usepackage[absolute]{textpos}
@@ -155,35 +155,35 @@
 \setlength{\TPHorizModule}{1mm}
 \setlength{\TPVertModule}{1mm}
 \newcommand{\lastupdated}{\begin{textblock}{60}(155,5)
-\color{date}\fontspec[Path = \pathmainfont]{\mainfont}\fontsize{8pt}{10pt}\selectfont 
-Last Updated on \today
-\end{textblock}}
+    \color{date}\fontspec[Path = \pathmainfont]{\mainfont}\fontsize{8pt}{10pt}\selectfont
+    Last Updated on \today
+  \end{textblock}}
 
 % Name command
 
 
 \newcommand{\namesection}[4]{
-\RaggedRight{
-\color{title}
-\fontsize{40pt}{45pt}
-\fontspec[Path = \pathtitlefont]{\firstnamefont}\selectfont #1 
-\fontspec[Path = \pathtitlefont]{\secondnamefont}\selectfont #2
-} \\[3pt]
+  \RaggedRight{
+    \color{title}
+    \fontsize{40pt}{45pt}
+    \fontspec[Path = \pathtitlefont]{\firstnamefont}\selectfont #1
+    \fontspec[Path = \pathtitlefont]{\secondnamefont}\selectfont #2
+  } \\[3pt]
 
-\noindent\makebox[\linewidth]{\color{title}\rule{\paperwidth}{0pt}}
-\vspace{-15pt}
-\noindent\makebox[\linewidth]{\color{title}\rule{\paperwidth}{0pt}}
-\vspace{-15pt}
+  \noindent\makebox[\linewidth]{\color{title}\rule{\paperwidth}{0pt}}
+  \vspace{-15pt}
+  \noindent\makebox[\linewidth]{\color{title}\rule{\paperwidth}{0pt}}
+  \vspace{-15pt}
 
-\RaggedRight{\fontspec[Path = \pathmonofont]{\monofont}\fontsize{14pt}{14pt}\selectfont #3}
+  \RaggedRight{\fontspec[Path = \pathmonofont]{\monofont}\fontsize{14pt}{14pt}\selectfont #3}
 
-\noindent\makebox[\linewidth]{\color{title}\rule{\paperwidth}{0pt}}
-\vspace{-15pt}
+  \noindent\makebox[\linewidth]{\color{title}\rule{\paperwidth}{0pt}}
+  \vspace{-15pt}
 
-\RaggedRight{\fontspec[Path = \pathmonofont]{\monofont}\fontsize{10pt}{14pt}\selectfont #4}
+  \RaggedRight{\fontspec[Path = \pathmonofont]{\monofont}\fontsize{10pt}{14pt}\selectfont #4}
 
-\noindent\makebox[\linewidth]{\color{title}\rule{\paperwidth}{0pt}}
-\vspace{-15pt}
+  \noindent\makebox[\linewidth]{\color{title}\rule{\paperwidth}{0pt}}
+  \vspace{-15pt}
 }
 
 % Section separators
@@ -194,41 +194,41 @@ Last Updated on \today
 
 % Headings command
 \titleformat{\section}{\color{title}
-\scshape\fontspec[Path = \pathtitlefont]{\titlefont}\fontsize{13pt}{20pt}\selectfont \raggedright}{}{0em}{}
+  \scshape\fontspec[Path = \pathtitlefont]{\titlefont}\fontsize{13pt}{20pt}\selectfont \raggedright}{}{0em}{}
 
 % Subheadings command
 \titleformat{\subsection}{
-\color{subheadings}\fontspec[Path = \pathsubheadingfont ]{\subheadingfont}\fontsize{\subheadingsize}{14pt}\selectfont\bfseries\uppercase}{}{0em}{}
+  \color{subheadings}\fontspec[Path = \pathsubheadingfont ]{\subheadingfont}\fontsize{\subheadingsize}{14pt}\selectfont\bfseries\uppercase}{}{0em}{}
 
 %Subheadings on the right
 \newcommand{\runsubsection}[1]{
-\color{subheadings}\fontspec[Path = \pathsubheadingfont ]{\subheadingfont}\fontsize{\subheadingsize}{14pt}\selectfont\bfseries\uppercase {#1} \normalfont}
+  \color{subheadings}\fontspec[Path = \pathsubheadingfont ]{\subheadingfont}\fontsize{\subheadingsize}{14pt}\selectfont\bfseries\uppercase {#1} \normalfont}
 
 % Descriptors command
 \newcommand{\descript}[1]{
-\color{subheadings}\raggedright\scshape\fontspec[Path = \pathdescriptorfont]{\descriptorfont}\fontsize{\descriptorsize}{13pt}\selectfont {#1 \\} \normalfont}
+  \color{subheadings}\raggedright\scshape\fontspec[Path = \pathdescriptorfont]{\descriptorfont}\fontsize{\descriptorsize}{13pt}\selectfont {#1 \\} \normalfont}
 
 % Location command
 \newcommand{\location}[1]{
-\color{headings}\raggedright\fontspec[Path = \pathlocationfont]{\locationfont}\fontsize{\locationsize}{12pt}\selectfont {#1\\} \normalfont}
+  \color{headings}\raggedright\fontspec[Path = \pathlocationfont]{\locationfont}\fontsize{\locationsize}{12pt}\selectfont {#1\\} \normalfont}
 
 %Contact Line
 \newcommand{\contactline}[4]{\begingroup
-\setbox0=\hbox{
-  \includegraphics[scale=0.23,trim={0cm 1.25cm -0.4cm 0cm}]{icons/main/mail.png}{#1}\hspace{1.15cm}
-  \includegraphics[scale=0.23,trim={0cm 1.25cm -0.4cm 0cm}]{icons/main/linkedin.png}{#3}
-  \includegraphics[scale=0.23,trim={0cm 1.25cm -0.4cm 0cm}]{icons/main/phone.png}{#4}\hspace{1.2cm}
-  \includegraphics[scale=0.23,trim={0cm 1.25cm -0.4cm 0cm}]{icons/main/github.png}{#2}\hspace{1.2cm}
-}\parbox{\wd0}{\box0}\endgroup}
+  \setbox0=\hbox{
+    \includegraphics[scale=0.23,trim={0cm 1.25cm -0.4cm 0cm}]{icons/main/mail.png}{#1}\hspace{1.15cm}
+    \includegraphics[scale=0.23,trim={0cm 1.25cm -0.4cm 0cm}]{icons/main/linkedin.png}{#3}
+    \includegraphics[scale=0.23,trim={0cm 1.25cm -0.4cm 0cm}]{icons/main/phone.png}{#4}\hspace{1.2cm}
+    \includegraphics[scale=0.23,trim={0cm 1.25cm -0.4cm 0cm}]{icons/main/github.png}{#2}\hspace{1.2cm}
+  }\parbox{\wd0}{\box0}\endgroup}
 
 %Inline Centered Logo
 \newcommand{\vcenteredinclude}[2]{\begingroup
-\setbox0=\hbox{\includegraphics[scale=0.10,trim={0 0.7cm 0cm 0cm}]{#1} {#2}}
-\parbox{\wd0}{\box0}\endgroup}
+  \setbox0=\hbox{\includegraphics[scale=0.10,trim={0 0.7cm 0cm 0cm}]{#1} {#2}}
+  \parbox{\wd0}{\box0}\endgroup}
 
 
 % Bullet Lists with fewer gaps command
 \newenvironment{tightemize}{
-\vspace{-\topsep}\begin{itemize}[label=\ding{212}]\itemsep1pt \parskip0pt \parsep0pt}
-{\end{itemize}\vspace{-\topsep}}
+  \vspace{-\topsep}\begin{itemize}[label=\ding{212}]\itemsep1pt \parskip0pt \parsep0pt}
+    {\end{itemize}\vspace{-\topsep}}
 
