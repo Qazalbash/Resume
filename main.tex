@@ -1,0 +1,132 @@
+\documentclass[letterpaper,8pt]{article}
+
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{geometry}
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{empheq}
+\usepackage{mdframed}
+\usepackage{graphicx}
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{hyphenat}
+\usepackage{fontawesome}
+\input{glyphtounicode}
+
+
+%---------- FONT OPTIONS ----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+
+\newcommand{\resumeItem}[1]{
+  \item{
+    {#1 \vspace{-2pt}} 
+  }
+}
+
+
+\newcommand{\resumeSubheading}[4]{
+    \vspace{-2pt}\item{
+    \textbf{#1} \hfill #2 \\
+    \textit{#3} \hfill \textit{ #4} 
+    }\vspace{-5pt}
+}
+
+
+\newcommand{\resumeSubSubheading}[2]{
+    \vspace{-2pt}\item {\textit{#1} \hfill \textit{ #2}}
+} 
+
+
+\newcommand{\resumeEducationHeading}[4]{
+    \vspace{-2pt}\item
+    \textbf{#1} \hfill #2 \\
+    \textit{#3} \hfill \textit{ #4} 
+}
+
+
+\newcommand{\resumeProjectHeading}[2]{
+    \vspace{-2pt}\item{#1 \hfill \textit{ #2}}
+}
+
+
+\newcommand{\resumeOrganizationHeading}[4]{
+    \vspace{-2pt}\item{
+    \textbf{#1} \hfill  \textit{ #2} \\
+    \textit{#3} 
+    }
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+
+\begin{document}
+
+\input{header.tex}
+\input{education.tex}
+\input{skills.tex}
+\input{researchexperience.tex}
+\input{professionalexperience.tex}
+\input{coursework.tex}
+\input{projects.tex}
+\input{certificates.tex}
+\input{awards.tex}
+\input{extracurricular.tex}
+% \input{references.tex}
+\input{hobbies.tex}
+% \input{organization.tex}
+
+\end{document}
